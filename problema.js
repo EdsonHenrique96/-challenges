@@ -51,12 +51,8 @@ var func = texto => {
             vet[i+1] = vet[i+1].toUpperCase();
     }
 
-    texto = vet.toString();
-
-    var virgula = eval('/'+","+'/g');
-    var underScore = eval('/'+"_"+'/g');
-
-    texto = texto.replace(virgula,"");
+    texto = vet.join('');
+    var underScore = /_/g;
     texto = texto.replace(underScore,"");
 
     return texto;
