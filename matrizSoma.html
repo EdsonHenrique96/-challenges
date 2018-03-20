@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function matrixElementsSum(matrix) {
+            var numeroColunas = matrix[0].length;
+            var numeroLinhas = matrix.length
+            var soma =0;
+
+            for(let i = 0; i <  numeroColunas; i++){                    
+                for(let j = 0;j < numeroLinhas; j++){
+                    if(matrix[j][i] == 0)
+                        break;
+                    soma += matrix[j][i];
+                        
+                    }
+
+            }
+            return soma; 
+            
+            }
+            
+            var ma = [[1,2,3],[1,2,3]];
+
+            matrixElementsSum(ma);
+        </script>
+    </body>
+</html>
