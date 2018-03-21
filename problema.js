@@ -41,18 +41,17 @@ console.log(saida);*/
 var func = texto => {
     texto = texto.toLowerCase();
     var vet = [];
+    const underScore = /_/g; //Expressão regular para buscar todas ocorrencias de underScore
 
-    for(var i = 0; i < texto.length; i++){
-        vet.push(texto.substring(i,i+1));
-    }
+    vet = texto.split("");
 
     for(var i = 0; i < vet.length; i++){
         if(vet[i] == "_")
             vet[i+1] = vet[i+1].toUpperCase();
     }
 
-    texto = vet.join('');
-    var underScore = /_/g;
+    texto = vet.join("");
+    
     texto = texto.replace(underScore,"");
 
     return texto;
