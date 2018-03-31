@@ -19,8 +19,6 @@ var clockFormart = time =>{
     return resultado;
 }
 
-var teste = "12:05:45AM"
+var teste = "12:05:45AM";
 
-
-
-clockFormart(teste);
+console.log(clockFormart(teste));

@@ -17,7 +17,6 @@ var zeroAndOne = vetor =>{
     var final = (vetor.length - 1)
 
     for(var i = 0; i < vetor.length; i ++){
-
         if(vetor[i] === 0){
             resultado[inicio] = vetor[i];
             inicio++; 
@@ -26,9 +25,7 @@ var zeroAndOne = vetor =>{
             final--;
         }
     }
-
     return resultado;
-
 }
 
 var teste = [1,0,0,0,1,1,0,1];
@@ -37,14 +34,3 @@ var teste3 = [0,0,0,0,1,0,0];
 
 console.log(zeroAndOne(teste3));
 
-/*    var array1 = [];
-    var array2 = [];     
-
-    for(var i = 0; i < vetor.length; i++){
-        if(vetor[i] === 0)
-            array1.push(vetor[i]);
-        else
-            array2.push(vetor[i]);           
-    }
-    
-    return ;*/ 
