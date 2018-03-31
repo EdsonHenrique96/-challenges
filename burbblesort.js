@@ -1,3 +1,8 @@
+/**
+ * Metodo de ordenação 
+ * burbble sort
+ */
+
 var burbblesort = list =>{
     var tamanho = list.length;
 

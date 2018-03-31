@@ -1,4 +1,8 @@
-
+/**
+ *  Dado um horário no formato 07:05:45PM.
+ *  retorne 19:05:05.
+ *  
+ */
 var clockFormart = time =>{
     var horas = parseInt(time.substring(0,2));
     var minutos = time.substring(3,5);

@@ -1,42 +1,8 @@
-/*var nome = "Edson_Batista";
+/*
+    Dado uma string em snakecase, retorne camelcase
 
-//Tranforma para caixa baixa
-var novoNome = nome.toLowerCase();
-
-var vet = [];
-
-for(var i = 0; i < novoNome.length; i++){   
-        vet.push(novoNome.substring(i,i+1));        
-}
-
-for(var i = 0; i < vet.length; i++){   
-    if(vet[i] === "_"){        
-        vet[i+1]=vet[i+1].toUpperCase();           
-    }       
-}
-
-var saida = vet.toString();
-
-/*var virgula = eval('/'+","+'/g');
-var underScore = eval('/'+"_"+'/g');
-
-var texto = saida.replace(virgula,"");
-texto = texto.replace(underScore,"");*/
-
-//jeito errado rs
-
-/*for(var i = 0; i < saida.length; i++){
-    saida = saida.replace(",","");
-    saida = saida.replace("_","");
-}
-
-
-console.log(saida);*/
-
-
-
-//console.log(dictionary.this_is_not_a_drill);
-
+    input : sou_dev     output:  souDev.
+*/
 
 var func = texto => {
     texto = texto.toLowerCase();

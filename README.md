@@ -1,2 +1,2 @@
-# -challenges
-Desafios de lógica
+# challenges
+Desafios de lógica.

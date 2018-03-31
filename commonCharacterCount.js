@@ -1,4 +1,4 @@
-/*Dado 2 string, retorna o numero de vezes que o caractere se repete
+/*Dado 2 string, retornar o número de vezes que o caractere se repete
 Exemplo :
     s1 = "aabcc" e s2="adcaa"
     retorno = 3
