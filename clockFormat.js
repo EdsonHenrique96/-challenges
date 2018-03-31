@@ -4,25 +4,25 @@
  *  
  */
 var clockFormart = time =>{
-    var horas = parseInt(time.substring(0,2));
+    var horas = time.substring(0,2);
     var minutos = time.substring(3,5);
     var segundos = time.substring(6,8);
     var periodo = time.substring(8,10);
 
     if(periodo === "PM" && horas !== 12){
-        horas += 12;
+        horas = parseInt(horas) + 12;
     }
     if(periodo === "AM" && horas === 12){
-        horas += 12;
+        horas = parseInt(horas) + 12;
     }
 
     horas = horas >= 24 ? "00" : horas.toString();
 
-    var resultado = horas + ":" + minutos + ":" + segundos;    
+    var resultado = `${horas}:${minutos}:${segundos}`;    
 
     return resultado;
 }
 
-var teste = "12:05:45AM";
+var teste = "07:05:45PM";
 
 console.log(clockFormart(teste));
