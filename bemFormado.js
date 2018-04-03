@@ -31,9 +31,7 @@ let bemFormado = elemento =>{
         }
     } 
 
-    let resultado =  pilha.length <= 0 ? true : false;
-
-    return resultado;
+    return pilha.length <= 0;
 }
 
 const teste = "[{()}]({[]})";
