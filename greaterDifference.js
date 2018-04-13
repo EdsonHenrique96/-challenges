@@ -12,43 +12,39 @@
  */
 
  const greaterDifferences = arr =>{
-    let max = 0;
-    let indiceMax = 0;
-    let indiceMin = 0;
-    let min = arr[0];
 
-    let menor = arr[0];
-    let maior = 0;
-
-    for (let i = 0 ; i < arr.length ; i++) {   
-        if (max < arr[i] && i !== 0) {
-            max = arr[i];
-            indiceMax = i;
+    /*let greaterInterval = 0;
+     
+    for(let i = 0; i < arr.length; i++){
+        for(let j = i+1; j < arr.length; j++){
+            if(arr[i] < arr[j]){
+                if((arr[j] - arr[i]) > greaterInterval ){
+                    greaterInterval = arr[j] - arr[i];
+                }
+            }
         }
-        if (min > arr[i] && i !== 0) {
+    }
+
+    return greaterInterval;*/
+
+    let min = arr[0];
+    let greaterInterval = 0;
+
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] < min){
             min = arr[i];
-            indiceMin = i;
-        }        
-        if(indiceMax > indiceMin && i === arr.length-1) return  arr[indiceMax] - arr[indiceMin];
-    }
-    
-
-
-    for (let i = 0 ; i < arr.length ; i++) {
-
-        if (i < indiceMax && menor > arr[i] ) menor = arr[i];        
-        if( i > indiceMax && maior < arr[i])  maior = arr[i];        
+        }if(min < arr[i]){            
+            if(greaterInterval <  (arr[i] - min)){
+                greaterInterval = arr[i] - min;
+            }
+        }    
     }
 
-    let part1 = arr[indiceMax] - menor;
-    let part2 = arr[indiceMin] - maior;
-
-    return part1 > part2 ? part1 : part2;
-    
-
+    return greaterInterval;
  }
 
  let test = [12, 7, 5, 8, 11, 9];
  let test1 = [6, 7, 5, 8, 11, 9];
  let test2 = [49, 50, 8, 11, 1, 9];
- console.log(greaterDifferences(test2));
+ let test3 = [-2, -8, -3, -5, -1];
+ console.log(greaterDifferences(test3));

@@ -19,6 +19,6 @@ const getSum = text => {
     console.log(finalResult);
 }
 
-const teste = "01asd30as20";
+const teste = "01asd300as20";
 
 getSum(teste);
