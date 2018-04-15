@@ -1,2 +1,4 @@
-# challenges
-Desafios de lógica.
+# algorithm challenges
+
+language : JavaScript.
+
